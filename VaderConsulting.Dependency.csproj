@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2ED411FE-CDD4-4CFF-82F3-CC172E1659AA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VaderConsulting.Dependency</RootNamespace>
+    <AssemblyName>VaderConsulting.Dependency</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AsyncBridge, Version=0.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AsyncBridge.0.1.1\lib\net40-Client\AsyncBridge.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddOrRemoveBusinessServiceEventArgs.cs" />
+    <Compile Include="AddOrRemoveServerEventArgs.cs" />
+    <Compile Include="ComponentBase.cs" />
+    <Compile Include="Collection.cs" />
+    <Compile Include="Disk.cs" />
+    <Compile Include="Drawing.cs" />
+    <Compile Include="GenericEqualityComparer.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="HAGroup.cs" />
+    <Compile Include="HARelationship.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="Item2.cs" />
+    <Compile Include="ItemEqualityComparer.cs" />
+    <Compile Include="ITopologicSortable.cs" />
+    <Compile Include="PhysicalSite.cs" />
+    <Compile Include="RecoveryTask.cs" />
+    <Compile Include="Relationship.cs" />
+    <Compile Include="Runbook.cs" />
+    <Compile Include="Server.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BusinessApplication.cs" />
+    <Compile Include="Service.cs" />
+    <Compile Include="StateChangeEventArgs.cs" />
+    <Compile Include="TopologicalSort.cs" />
+    <Compile Include="TopologicSortExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VaderConsulting.Database\VaderConsulting.Database.csproj">
+      <Project>{f44f61fd-07f6-42ef-af53-1152cfbcc59f}</Project>
+      <Name>VaderConsulting.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VaderConsulting.Helper\VaderConsulting.Helper.csproj">
+      <Project>{ba53ce7f-858d-46ae-81c9-a88b9a730130}</Project>
+      <Name>VaderConsulting.Helper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

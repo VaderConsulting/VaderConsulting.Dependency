@@ -15,6 +15,10 @@ C# .NET 4.0 class library modelling business-application and server dependencies
 
 Open `VaderConsulting.Dependency.csproj` in Visual Studio 2013 or later (ToolsVersion 12.0). There is no `.sln` in this folder. The project references sibling folders `..\VaderConsulting.Database\VaderConsulting.Database.csproj` and `..\VaderConsulting.Helper\VaderConsulting.Helper.csproj`. `BusinessService.cs` and `AddOrRemoveServiceEventArgs.cs` are present but not listed in the `.csproj`. `DC.csproj` is a leftover .NET 3.5 project that will not build against the current `Server.cs` / `Service.cs` (those now live in namespace `VaderConsulting.Dependency`).
 
+## Requirements
+
+- Visual Studio 2013 or later, .NET Framework 3.5, .NET Framework 4.0
+
 ## Attribution and provenance
 
 Working copy from Dave Robinson's OneDrive Historical Dev folder `VaderConsulting.Dependency`. Assembly title/product `DependencyCollection`; copyright `Copyright ©  2015`; company empty. Namespace `VaderConsulting.Dependency` (leftover `DC` and demo `TopoSortDemo` types also present). `packages.config` lists AsyncBridge 0.1.1 (referenced by the `.csproj`). `App.config` has leftover Entity Framework 6 LocalDB section, not referenced by the project. `TopologicalSort.cs` is adapted from Gregory Adam (2009) with a textbook citation to Tremblay and Sorenson.

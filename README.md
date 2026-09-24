@@ -21,7 +21,7 @@ Open `VaderConsulting.Dependency.csproj` in Visual Studio 2013 or later (ToolsVe
 
 ## Attribution and provenance
 
-Working copy from Dave Robinson's OneDrive Historical Dev folder `VaderConsulting.Dependency`. Assembly title/product `DependencyCollection`; copyright `Copyright ©  2015`; company empty. Namespace `VaderConsulting.Dependency` (leftover `DC` and demo `TopoSortDemo` types also present). `packages.config` lists AsyncBridge 0.1.1 (referenced by the `.csproj`). `App.config` has leftover Entity Framework 6 LocalDB section, not referenced by the project. `TopologicalSort.cs` is adapted from Gregory Adam (2009) with a textbook citation to Tremblay and Sorenson.
+Working copy from my Historical Dev folder `VaderConsulting.Dependency`. Assembly title/product `DependencyCollection`; copyright `Copyright ©  2015`; company empty. Namespace `VaderConsulting.Dependency` (leftover `DC` and demo `TopoSortDemo` types also present). `packages.config` lists AsyncBridge 0.1.1 (referenced by the `.csproj`). `App.config` has leftover Entity Framework 6 LocalDB section, not referenced by the project. `TopologicalSort.cs` is adapted from Gregory Adam (2009) with a textbook citation to Tremblay and Sorenson.
 
 ## License
 

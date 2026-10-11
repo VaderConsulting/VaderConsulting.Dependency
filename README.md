@@ -25,4 +25,4 @@ Working copy from my Historical Dev folder `VaderConsulting.Dependency`. Assembl
 
 ## License
 
-MIT © 2026 VaderConsulting. See `LICENSE`.
+MIT © 2026 Vader Consulting. See `LICENSE`.
